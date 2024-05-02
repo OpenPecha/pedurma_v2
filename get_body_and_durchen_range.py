@@ -4,11 +4,11 @@ from utils import from_yaml, to_yaml
 CANON_IMG_GRP_INFO = {
     'kangyur': {
         'img_grp_base':'I1PD96',
-        'img_grp_offset':784
+        'img_grp_offset':783
     },
     'tengyur': {
         'img_grp_base':'I1PD95',
-        'img_grp_offset':846
+        'img_grp_offset':845
     }
 }
 
@@ -48,7 +48,7 @@ def get_body_and_durchen_range(canon, outline):
 
 
 if __name__ == "__main__":
-    canon = 'tengyur'
+    canon = 'kangyur'
     outline = from_yaml(Path(f'./data/{canon}/new_{canon}_outline.yml'))
     body_img_ranges, durchen_img_ranges = get_body_and_durchen_range(canon, outline)
     body_img_ranges_yml = to_yaml(body_img_ranges)

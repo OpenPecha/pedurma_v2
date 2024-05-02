@@ -79,8 +79,3 @@ def prepare_text_note_pages(canon, text_id):
     output_dir = Path(f'./data/{canon}/proofread_notes/')
     prepare_note_pages(vol_text, text_info, output_dir)
 
-
-if __name__ == "__main__":
-    
-
-
